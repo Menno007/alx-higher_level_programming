@@ -1,3 +1,2 @@
 #!bin/bash
-PYFILEC="${PYFILE}c"
-python3 -c "import py_compile; py_compile.compile('$PYFILE', cfile='$PYFILEC')"
+python3 -c "import py_compile; py_compile.compile('$PYFILE', cfile='${PYFILE}c')"
