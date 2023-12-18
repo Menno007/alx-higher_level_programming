@@ -4,6 +4,7 @@ def safe_print_division(a, b):
         result = a/b
         return result
     except (ZeroDivisionError, ValueError, TypeError):
-        print("Inside result: {:d}".format(result))
+        print("Inside result: {}".format(None))
     finally:
-        print("Inside result: {:d}".format(result))
+        if 'result' in locals():
+            print("Inside result: {}".format(result))
